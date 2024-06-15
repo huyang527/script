@@ -21,5 +21,4 @@ ONBOOT=yes
 EOF
 
 systemctl restart network
-
 systemctl restart sshd
