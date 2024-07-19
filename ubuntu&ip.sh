@@ -1,5 +1,8 @@
 #!/bin/bash
-ip addr
+
+# 查看网口名称
+sudo ip addr
+
 # 定义网络接口名称
 echo "输入网口名称："
 read INTERFACE
@@ -7,6 +10,7 @@ read INTERFACE
 # 定义静态 IP 地址
 echo "请输入要设置的 IP 地址："
 read IP_ADDR
+
 # 定义子网掩码
 NETMASK="255.255.255.0"
 
