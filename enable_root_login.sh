@@ -6,7 +6,7 @@ sudo passwd root
 
 # 编辑 SSH 配置文件以允许 root 登录
 echo "正在修改 SSH 配置文件..."
-sudo sed -i '/PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
+sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
 
 # 重启 SSH 服务
 echo "正在重启 SSH 服务..."
