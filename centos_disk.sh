@@ -13,6 +13,6 @@ read VG_NAME
 vgextend $VG_NAME $DISK_ADD
 lvcreate -l 100%FREE -n data $VG_NAME
 mkfs.xfs /dev/$VG_NAME/data
-mkdir /data
+mkdir -p /data
 mount /dev/$VG_NAME/data /data
 echo "/dev/$VG_NAME/data /data xfs defaults 0 0" >> /etc/fstab
