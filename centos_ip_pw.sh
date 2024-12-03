@@ -11,9 +11,9 @@ read GATEWAY
 cat <<EOF > /etc/sysconfig/network-scripts/ifcfg-ens192
 DEVICE=ens192
 BOOTPROTO=static
-IPADDR= $IP_ADDR
+IPADDR=$IP_ADDR
 NETMASK=255.255.255.0
-GATEWAY= $GATEWAY
+GATEWAY=$GATEWAY
 ONBOOT=yes
 EOF
 
